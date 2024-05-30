@@ -6,11 +6,11 @@ files:
 
 hooks:
  BeforeInstall:
-    - location: script/apache2_install.sh
+    - location: apache2_install.sh
       timeout: 300
       runas: root
 
  ApplicationStop:
-    - location: script/apache2_stop.sh
+    - location: apache2_stop.sh
       timeout: 300
       runas: root
